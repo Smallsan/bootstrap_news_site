@@ -8,26 +8,152 @@
       rel="stylesheet"
       href="../node_modules/bootstrap/dist/css/bootstrap.css"
     />
-    <link rel="stylesheet" href="../assets/css/styles.css" class="css">
+    <link rel="stylesheet" href="../assets/css/styles.css" class="css" />
   </head>
   <body>
-    <div id="navbar"></div>
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="../local_news.html">Local News</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Card 4</li>
-        </ol>
-      </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="color-pile"></div>
 
+      <a class="navbar-brand ms-lg-3" href="../index.html">Small News</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item ps-3">
+            <a
+              class="nav-link"
+              href="../index.html"
+              data-bs-toggle="tooltip"
+              title="Go to Main"
+              >Main</a
+            >
+          </li>
+          <li class="nav-item ps-3">
+            <a
+              class="nav-link"
+              href="../local_news.html"
+              data-bs-toggle="tooltip"
+              title="Go to Local News"
+              >Local News</a
+            >
+          </li>
+          <li class="nav-item ps-3">
+            <a
+              class="nav-link"
+              href="../weather.html"
+              data-bs-toggle="tooltip"
+              title="Go to Weather Forecast"
+              >Weather Forecast</a
+            >
+          </li>
+          <li class="nav-item ps-3">
+            <a
+              class="nav-link"
+              href="../showbiz.html"
+              data-bs-toggle="tooltip"
+              title="Go to Showbiz"
+              >Showbiz</a
+            >
+          </li>
+          <li class="nav-item ps-3">
+            <a
+              class="nav-link"
+              href="../sports.html"
+              data-bs-toggle="tooltip"
+              title="Go to Sports"
+              >Sports</a
+            >
+          </li>
+          <li class="nav-item ps-3">
+            <a
+              class="nav-link"
+              href="../references.html"
+              data-bs-toggle="tooltip"
+              title="Go to References"
+              >References</a
+            >
+          </li>
+        </ul>
+        <div class="dropdown ms-auto"></div>
+        <button
+          class="btn btn-outline-light dropdown-toggle me-3"
+          type="button"
+          id="dropdownMenuButton"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Support Us
+        </button>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <li>
+            <a
+              class="dropdown-item"
+              href="https://github.com/Smallsan/bootstrap_news_site"
+              >Github</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav aria-label="breadcrumb" class="custom-breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="../weather.html">Weather</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Weather Story 4</li>
+      </ol>
+    </nav>
+
+    <div class="container mt-8">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <div class="card">
+              <img
+                src="../assets/images/weather/4.jpg"
+                class="card-img-top img-fluid rounded"
+                alt="News Story 4"
+              />
+      
+              <div class="card-body">
+                <h1 class="card-title mb-4">FACTCHECK: Bathing, drinking cold water safe in hot weather</h1>
+      
+                <p class="card-text">
+                  Claim: A person exposed to hot weather should wait 30 minutes before bathing or washing body parts exposed to heat.
+                  <br><br>
+                  Rating: FALSE
+                  <br><br>
+                  Why we fact-checked this: The Facebook reel containing the claim has 14,400 reactions, 398 comments, and 12,000 shares as of writing.
+                  <br><br>
+                  The video lists things a person should do during a heat wave. Among its reminders:
+                  <br><br>
+                  “Kapag umabot ang temperatura ng 38°C at galing ka sa labas, huwag kaagad maghugas ng kamay o paa, wag maghilamos o basain ang bahaging nabilad sa araw. Magpalipas ng di bababa sa 30 minuto o kalahating oras bago maghilamos o maligo.”
+                  <br><br>
+                  (When the temperature reaches 38°C and you are coming from outdoors, do not immediately wash your hands, feet, face, or body parts exposed to the sun. Wait for at least 30 minutes or half an hour before washing or bathing.)
+                  <br><br>
+                  <a href="https://www.rappler.com/newsbreak/fact-check/bathing-drinking-cold-water-safe-hot-weather">https://www.rappler.com/newsbreak/fact-check/bathing-drinking-cold-water-safe-hot-weather</a>
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Load scripts and then load the navbar.html file -->
     <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script>
-      $(function () {
-        $("#navbar").load("../global/navbar.html");
-      });
-    </script>
     <script src="../global/modal.js"></script>
   </body>
 </html>

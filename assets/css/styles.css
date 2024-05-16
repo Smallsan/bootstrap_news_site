@@ -32,3 +32,13 @@ body {
   .custom-breadcrumb .breadcrumb-item.active {
     color: #495057; 
   }
+
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold; 
+  }
+  
+  .card-text {
+    font-size: 1.2rem; 
+    line-height: 1.6; 
+  }
