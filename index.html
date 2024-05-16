@@ -8,9 +8,88 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.css"
     />
+    <link rel="stylesheet" href="assets/css/styles.css" class="css">
   </head>
   <body>
     <div id="navbar"></div>
+
+    <div
+      class="modal fade"
+      id="welcomeModal"
+      tabindex="-1"
+      aria-labelledby="welcomeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="welcomeModalLabel">
+              Welcome to Small News
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Welcome to our site! We're dedicated to providing you with the best
+            content around. this free access won't last forever.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Top Stories -->
+        <div class="container mt-4">
+          <h2>Top Stories</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card card-hover">
+                <img src="assets/images/news/1.jpg" class="card-img-top" alt="News Story 1">
+                <div class="card-body">
+                  <h5 class="card-title">Age is just a number': 81-year-old man conquers highest Philippine peak</h5>
+                  <p class="card-text">Sergio Palomo, an 81-year-old hiker, had always dreamed of conquering the Philippines'
+                    highest peak, Mount Apo, at least once in his lifetime. successfully set foot on Mount
+                    Apo's summit over the weekend. Courtesy: Lakaw ni Paw</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-hover">
+                <img src="assets/images/news/4.jpg" class="card-img-top" alt="News Story 2">
+                <div class="card-body">
+                  <h5 class="card-title">PH civilian mission sets sail for Scarborough Shoal in WPS</h5>
+                  <p class="card-text"> Around 100 boats departed from Zambales early Wednesday morning for a civilian
+                    mission to Scarborough Shoal or Bajo de Masinloc in the West Philippine Sea (WPS).</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-hover">
+                <img src="assets/images/news/5.jpg" class="card-img-top" alt="News Story 3">
+                <div class="card-body">
+                  <h5 class="card-title">Hontiveros won’t let go of Bamban mayor over ties to Pogo</h5>
+                  <p class="card-text">She said the investigation by the Senate, part of the continuing inquiry into Pogos that
+                    the committee on women and children opened last year, and other state agencies should
+                    focus on Guo’s ties with gaming operators and her personal background.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+
 
 
 
@@ -23,5 +102,6 @@
         $("#navbar").load("global/navbar.html");
       });
     </script>
+    <script src="global/modal.js"></script>
   </body>
 </html>
